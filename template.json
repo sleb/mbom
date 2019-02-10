@@ -1,0 +1,42 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Resources": {
+    "MbomAlexaFunction": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "CodeUri": "build/libs/mbom.jar",
+        "Handler": "com.scorpapede.mbom.MbomStreamHandler::handleRequest",
+        "Runtime": "java8",
+        "MemorySize": 512,
+        "Events": {
+          "AlexaRequest": {
+            "Type": "AlexaSkill"
+          }
+        }
+      }
+    },
+
+    "MbomAlexaAudioBucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "sleb-mbom-audio"
+      }
+    },
+
+    "MbomAlexaAudioBucketPolicy": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {"Ref": "MbomAlexaAudioBucket"},
+        "PolicyDocument": {
+          "Statement": [{
+              "Action": ["s3:GetObject"],
+              "Effect": "Allow",
+              "Resource": { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "MbomAlexaAudioBucket" } , "/*" ]]},
+              "Principal": "*"
+          }]
+        }
+      }
+    }
+  }
+}
