@@ -74,3 +74,61 @@ who's the coolest student in school
 who's the coolest student in fifth grade
 ```
 </details>
+
+#### What is your favorite food?
+<details>
+  <summary>Variants</summary>
+
+```
+What's your favorite thing to eat
+What is your favorite food
+What's your favorite food
+What is your favorite thing to eat
+What do you like to eat
+```
+</details>
+
+### Do you have a valentine?
+<details>
+  <summary>Variants</summary>
+
+```
+Do you have a valentine
+```
+</details>
+
+### Do you play Fortnite?
+<details>
+  <summary>Variants</summary>
+
+```
+Do you ever play Fortnite
+Can you play Fortnite
+Do you like Fortnite
+Do you play Fortnite
+```
+</details>
+
+### What is your favorite book?
+<details>
+  <summary>Variants</summary>
+
+```
+do you have a book that you like
+do you have a favorite book
+what book do you like
+what is your favorite book
+```
+</details>
+
+### Have you ever been sent to the Principal's office?
+<details>
+  <summary>Variants</summary>
+
+```
+have you ever been sent to the principal's office
+have you ever been to the principal's office
+have you been sent to the principal's office
+have you been to the principal's office
+```
+</details>

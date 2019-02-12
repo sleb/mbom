@@ -4,28 +4,27 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput
 import com.amazon.ask.dispatcher.request.handler.RequestHandler
 import com.amazon.ask.model.Response
 import com.amazon.ask.request.Predicates.intentName
-import com.scorpapede.mbom.speach.*
+import com.scorpapede.mbom.speach.HINTS
+import com.scorpapede.mbom.speach.MMM_FINGERS
+import com.scorpapede.mbom.speach.speak
 import java.util.*
 
-private val PRELUDES = arrayListOf(
-    YOURE_MUMBLING,
-    ENUNCIATE,
-    CUMANA_WHAT_NOW
-)
+abstract class BaseMonsterIntentHandler(
+    private val intent: String,
+    private val responses: List<String>
+) : RequestHandler {
 
-class FallbackIntentHandler : RequestHandler {
     override fun canHandle(input: HandlerInput): Boolean =
-        input.matches(intentName("AMAZON.FallbackIntent"))
+        input.matches(intentName(intent))
 
-    override fun handle(input: HandlerInput): Optional<Response> {
-        return input.responseBuilder
+    override fun handle(input: HandlerInput): Optional<Response> =
+        input.responseBuilder
             .withSpeech(
                 speak {
-                    audio { src = PRELUDES.random() }
-                    p { +HINTS.random() }
+                    audio { src = responses.random() }
                 }.toString()
             )
+            .withShouldEndSession(false)
             .withReprompt(speak { +HINTS.random() }.toString())
             .build()
-    }
 }

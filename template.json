@@ -8,7 +8,7 @@
         "CodeUri": "build/libs/mbom.jar",
         "Handler": "com.scorpapede.mbom.MbomStreamHandler::handleRequest",
         "Runtime": "java8",
-        "MemorySize": 512,
+        "MemorySize": 1024,
         "Events": {
           "AlexaRequest": {
             "Type": "AlexaSkill"

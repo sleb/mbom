@@ -10,12 +10,17 @@ class MbomStreamHandler : SkillStreamHandler(getSkill())
 fun getSkill(): Skill =
     Skills.standard()
         .addRequestHandlers(
-            LaunchRequestHandler(),
             CoolestKidIntentHandler(),
+            DoYouPlayFortniteIntentHandler(),
+            DoYouHaveAValentineIntentHandler(),
+            FallbackIntentHandler(),
             HelpIntentHandler(),
-            StopHandler(),
+            LaunchRequestHandler(),
+            PrincipalsOfficeIntentHandler(),
             SessionEndedRequestHandler(),
-            FallbackIntentHandler()
+            StopHandler(),
+            WhatDoYouEatIntentHandler(),
+            WhatIsYourFavoriteBookIntentHandler()
         )
         .withSkillId("amzn1.ask.skill.0794c498-bde4-41cc-8f68-afd42e2c4b75")
         .build()

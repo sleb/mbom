@@ -25,20 +25,3 @@ class StopHandler : RequestHandler {
             .withShouldEndSession(true)
             .build()
 }
-
-fun main() {
-    val whos = listOf("who is", "who's")
-    val kids = listOf("kid", "fifth grader", "dude", "boy", "student")
-    val ats = listOf("at", "in")
-    val schools = listOf("Serene Lake", "school", "fifth grade")
-
-    for (who in whos) {
-        for (kid in kids) {
-            for (at in ats) {
-                for (school in schools) {
-                    println(""""$who the coolest $kid $at $school",""")
-                }
-            }
-        }
-    }
-}

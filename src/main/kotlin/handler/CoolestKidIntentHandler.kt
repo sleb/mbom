@@ -1,28 +1,16 @@
 package com.scorpapede.mbom.handler
 
-import com.amazon.ask.dispatcher.request.handler.HandlerInput
-import com.amazon.ask.dispatcher.request.handler.RequestHandler
-import com.amazon.ask.model.Response
-import com.amazon.ask.request.Predicates.intentName
-import com.scorpapede.mbom.speach.speak
-import java.util.*
+import com.scorpapede.mbom.speach.HENRY_HENRY
+import com.scorpapede.mbom.speach.ITS_ME
+import com.scorpapede.mbom.speach.I_REALLY_LIKE_ME
+import com.scorpapede.mbom.speach.MAYBE_ITS_YOU
 
-private val RESPONSES = arrayListOf(
-    "https://s3.amazonaws.com/sleb-mbom-audio/henry-henry_1.mp3",
-    "https://s3.amazonaws.com/sleb-mbom-audio/maybe-its-you_1.mp3"
+class CoolestKidIntentHandler : BaseMonsterIntentHandler(
+    "CoolestKidIntent",
+    arrayListOf(
+        HENRY_HENRY,
+        MAYBE_ITS_YOU,
+        ITS_ME,
+        I_REALLY_LIKE_ME
+    )
 )
-
-class CoolestKidIntentHandler : RequestHandler {
-    override fun canHandle(input: HandlerInput): Boolean =
-        input.matches(intentName("CoolestKidIntent"))
-
-    override fun handle(input: HandlerInput): Optional<Response> =
-        input.responseBuilder
-            .withSpeech(
-                speak {
-                    audio { src = RESPONSES.random() }
-                }.toString()
-            )
-            .withShouldEndSession(true)
-            .build()
-}

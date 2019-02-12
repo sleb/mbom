@@ -5,8 +5,7 @@ import com.amazon.ask.dispatcher.request.handler.RequestHandler
 import com.amazon.ask.model.LaunchRequest
 import com.amazon.ask.model.Response
 import com.amazon.ask.request.Predicates
-import com.scorpapede.mbom.speach.HINTS
-import com.scorpapede.mbom.speach.speak
+import com.scorpapede.mbom.speach.*
 import java.util.*
 
 private val PRELUDES = arrayListOf(
@@ -14,7 +13,16 @@ private val PRELUDES = arrayListOf(
 )
 
 private val GREETINGS = arrayListOf(
-    "https://s3.amazonaws.com/sleb-mbom-audio/hey-there_1.mp3"
+    ASK_ME_ANYTHING,
+    CHAPSTICK,
+    STICK_OF_GUM,
+    SEA_OTTERS_ROCK,
+    MMM_FINGERS,
+    MAHAH_MANAH,
+    I_NEED_A_SNACK,
+    I_HATE_SNOW,
+    HOWS_IT_GOING,
+    COME_CLOSER
 )
 
 class LaunchRequestHandler : RequestHandler {
@@ -32,8 +40,4 @@ class LaunchRequestHandler : RequestHandler {
             }.toString())
         .withReprompt(speak { +HINTS.random() }.toString())
         .build()
-}
-
-fun main() {
-    println("""<speak><p>${PRELUDES.random()}</p><p>${HINTS.random()}<p><audio src="https://s3.amazonaws.com/sleb-mbom-audio/hey-there.mp3"/></p></speak>""")
 }
