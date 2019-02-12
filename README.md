@@ -75,7 +75,7 @@ who's the coolest student in fifth grade
 ```
 </details>
 
-#### What is your favorite food?
+### What is your favorite food?
 <details>
   <summary>Variants</summary>
 
