@@ -1,4 +1,4 @@
-package com.scorpapede.mbom.speach
+package com.scorpapede.mbom.speech
 
 const val ARAGOG_IS_COOL = "https://s3.amazonaws.com/sleb-mbom-audio/aragog-is-cool.mp3"
 const val ARE_YOU_BUSY_TONIGHT = "https://s3.amazonaws.com/sleb-mbom-audio/are-you-busy-tonight.mp3"

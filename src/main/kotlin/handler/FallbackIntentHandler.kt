@@ -5,6 +5,9 @@ import com.amazon.ask.dispatcher.request.handler.RequestHandler
 import com.amazon.ask.model.Response
 import com.amazon.ask.request.Predicates.intentName
 import com.scorpapede.mbom.speach.*
+import com.scorpapede.mbom.speech.CUMANA_WHAT_NOW
+import com.scorpapede.mbom.speech.ENUNCIATE
+import com.scorpapede.mbom.speech.YOURE_MUMBLING
 import java.util.*
 
 private val PRELUDES = arrayListOf(

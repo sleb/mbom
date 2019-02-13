@@ -132,3 +132,60 @@ have you been sent to the principal's office
 have you been to the principal's office
 ```
 </details>
+
+### What is your favorite color?
+<details>
+  <summary>Variants</summary>
+
+```
+do you have a favorite color
+what is your favorite color
+what's your favorite color
+```
+</details>
+
+### What is your greatest ambition?
+<details>
+  <summary>Variants</summary>
+
+```
+Do have a greatest ambition
+What is your greatest ambition
+```
+</details>
+
+### Who is your best friend?
+<details>
+  <summary>Variants</summary>
+
+```
+do you have a best friend
+who's your best friend
+who is your best friend
+```
+</details>
+
+### What's your favorite song?
+<details>
+  <summary>Variants</summary>
+
+```
+do you have a favorite song
+what's your family song
+what is your favorite song
+```
+</details>
+
+### What's your favorite movie?
+<details>
+  <summary>Variants</summary>
+
+```
+do you have a favorite video
+what's your favorite video
+what is your favorite video
+do you have a favorite movie
+what is your favorite movie
+what's your favorite movie
+```
+</details>

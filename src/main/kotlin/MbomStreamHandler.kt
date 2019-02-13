@@ -10,10 +10,15 @@ class MbomStreamHandler : SkillStreamHandler(getSkill())
 fun getSkill(): Skill =
     Skills.standard()
         .addRequestHandlers(
+            BestFriendIntentHandler(),
             CoolestKidIntentHandler(),
-            DoYouPlayFortniteIntentHandler(),
             DoYouHaveAValentineIntentHandler(),
+            DoYouPlayFortniteIntentHandler(),
             FallbackIntentHandler(),
+            FavoriteColorIntentHandler(),
+            FavoriteMovieIntentHandler(),
+            FavoriteSongIntentHandler(),
+            GreatestAmbitionIntentHandler(),
             HelpIntentHandler(),
             LaunchRequestHandler(),
             PrincipalsOfficeIntentHandler(),

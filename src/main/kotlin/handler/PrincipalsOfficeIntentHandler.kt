@@ -1,7 +1,7 @@
 package com.scorpapede.mbom.handler
 
-import com.scorpapede.mbom.speach.THE_PRINCIPAL_COMES_TO_MY_OFFICE
-import com.scorpapede.mbom.speach.YEAH_NO
+import com.scorpapede.mbom.speech.THE_PRINCIPAL_COMES_TO_MY_OFFICE
+import com.scorpapede.mbom.speech.YEAH_NO
 
 class PrincipalsOfficeIntentHandler : BaseMonsterIntentHandler(
     "PrincipalsOfficeIntent",
