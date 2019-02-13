@@ -189,3 +189,29 @@ what is your favorite movie
 what's your favorite movie
 ```
 </details>
+
+### What's your favorite animal?
+<details>
+  <summary>Variants</summary>
+
+```
+do you have a favorite animal
+what's your favorite animal
+what is your favorite animal
+```
+</details>
+
+### What are your words of wisdom?
+<details>
+  <summary>Variants</summary>
+
+```
+do you have any words of inspiration
+what are your words of inspiration
+inspire me
+what are your words of advice
+do you have any advice
+what are your words of wisdom
+do you have any words of wisdom
+```
+</details>

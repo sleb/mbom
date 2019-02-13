@@ -15,6 +15,7 @@ fun getSkill(): Skill =
             DoYouHaveAValentineIntentHandler(),
             DoYouPlayFortniteIntentHandler(),
             FallbackIntentHandler(),
+            FavoriteAnimalIntentHandler(),
             FavoriteColorIntentHandler(),
             FavoriteMovieIntentHandler(),
             FavoriteSongIntentHandler(),
@@ -25,7 +26,8 @@ fun getSkill(): Skill =
             SessionEndedRequestHandler(),
             StopHandler(),
             WhatDoYouEatIntentHandler(),
-            WhatIsYourFavoriteBookIntentHandler()
+            WhatIsYourFavoriteBookIntentHandler(),
+            WordsOfWisdomIntentHandler()
         )
         .withSkillId("amzn1.ask.skill.0794c498-bde4-41cc-8f68-afd42e2c4b75")
         .build()
